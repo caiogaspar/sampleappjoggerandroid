@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Entrar</string>
+
+    <string name="error_invalid_email">Este email não é válido.</string>
+    <string name="error_invalid_password">A senha deve ter no mínimo 8 caracteres.</string>
+    <string name="error_incorrect_password">A senha não está correta.</string>
+    <string name="error_field_required">Este campo é obrigatório.</string>
+</resources>

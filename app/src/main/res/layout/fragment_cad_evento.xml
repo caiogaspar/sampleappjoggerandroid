@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="br.com.jogger.jogger.CadEventoActivity"> -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.jogger.jogger.HomeActivity$CadastroEventoFragment"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:id="@+id/form_cad_evento"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+            <EditText
+                android:id="@+id/nome_evento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Título do Evento"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="#010101"
+                android:textColorHint="#010101"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@null"
+                android:autoText="false" />
+
+            <EditText
+                android:id="@+id/desc_evento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descrição"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text|textMultiLine"
+                android:maxLines="5"
+                android:singleLine="false"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="#010101"
+                android:textColorHint="#010101"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@null"
+                android:layout_weight="0.52"
+                android:lines="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Local"
+                android:id="@+id/txtEndereco"
+                android:textColor="#000000"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:onClick="onClick"
+                android:clickable="true" />
+
+            <EditText
+                android:id="@+id/data_ini_evento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="datetime"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="#010101"
+                android:textColorHint="#010101"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:hint="Data Início"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@null" />
+
+            <EditText
+                android:id="@+id/data_fim_evento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="datetime"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="#010101"
+                android:textColorHint="#010101"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Data Fim"
+                android:background="@null" />
+
+            <Spinner
+                android:id="@+id/cb_modalidade"
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:textColor="#fff"
+                android:background="#f7f4f4"
+                android:clickable="true"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+            <EditText
+                android:id="@+id/nr_max_participantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="numberSigned"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="#010101"
+                android:textColorHint="#010101"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:hint="Nº Max Participantes"
+                android:background="@null" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/txtLatitude"
+                android:visibility="invisible" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/txtLongitude"
+                android:visibility="invisible" />
+
+            <Button
+                style="@style/buttonStyle"
+                android:id="@+id/cadastrar_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Cadastrar"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+<!-- </LinearLayout> -->
+</RelativeLayout>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jogger</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Buscar Eventos -->
+    <string name="distance">Distância</string>
+    <string name="search_events">Buscar Eventos</string>
+    <string name="sports">Modalidades</string>
+    <string name="day_week">Dia da Semana</string>
+    <string name="schedule">Horário</string>
+    <string name="events_now">Eventos próximos de acontecer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_mapa">Mapa</string>
+    <string name="initial_period">Período Inicial</string>
+    <string name="final_period">Período Final</string>
+
+</resources>
